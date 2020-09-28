@@ -44,8 +44,7 @@ echo "Running commands for Question 2a)..."
 
 # Loop through the number of files in the dataset.
 # Choose a small number of files to start.
-NUM_FILES="1 2 3 4 5 6 7"
-# NUM_FILES=$(seq 1 100)
+ NUM_FILES=$(seq 1 100)
 
 # Initialize with an empty file.
 echo "" > A3Q2a_full.txt
@@ -54,9 +53,7 @@ do
     # Append the current dataset to the full dataset.
     echo "Loading file A3_iris_data/QMB6358-iris/iris_$FILE_NUM.txt"
 
-    # Insert a cat command here, reading in the numbered dataset
-    # and appending it to the full dataset A3Q2a_full.csv:
-
+cat A3Q2_data.sh > A3Q2a_full.csv
 
 done
 
@@ -71,7 +68,10 @@ echo "Running commands for Question 2b)..."
 
 # Insert a cat command here, reading in all numbered datasets
 # and writing to the full dataset A3Q2b_full.csv.
-# One-line command goes here:
+# One-line command goes here:  
+
+cat A3Q2_data.sh > A3Q2b_full.csv
+
 
 
 echo "Completed command for Question 2b)."
